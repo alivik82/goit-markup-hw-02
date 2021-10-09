@@ -11,30 +11,52 @@
     --dark-button-color: #212121;
     --main-button-color-background: #2196F3;
     --secondary-button-color-background: #2196F3;
+    --main-background-color: #E5E5E5;
+    --second-background-color: #2F303A;
+    --third-background-color: #F5F4FA;
 }
+
 body {
     font-family: "Roboto", sans-serif;
+    background: var(--main-background-color) ;
 }
-a {
-       text-decoration: none;
-       
+
+.list {
+    list-style: none;
 }
+
+.link {
+    text-decoration: none;
+}
+
 /*accent-color*/
 .accent-color {
     color: var(--accent-color);
 }
-/*header*/
-.logo {
+
+/*logo*/
+.header-logo, .footer-logo {
     font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color:var(--logo-color)
 }
+
 .menu-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--text-header-color);
 }
+
+.header-mail, .header-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+
