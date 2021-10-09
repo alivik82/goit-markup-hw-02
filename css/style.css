@@ -1,17 +1,40 @@
 :root {
-    --main-text-color: #212121;
+    --title-color: #FFFFFF;
+    --second-title-color: #212121;
+    --third-title-color: #212121;
+    --text-header-color: #212121;
+    --text-footer-color: #FFFFFF;
     --text-color: #757575;
-    --text-excretions-color: #2196F3;
-    /*h1,footer*/
-    --text-primary-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --logo-color: #000000;
+    --light-button-color: #FFFFFF;
+    --dark-button-color: #212121;
+    --main-button-color-background: #2196F3;
+    --secondary-button-color-background: #2196F3;
 }
 body {
     font-family: "Roboto", sans-serif;
 }
 a {
        text-decoration: none;
+       
 }
-/*excretions*/
-.excretions {
-    color: var(--text-excretions-color);
+/*accent-color*/
+.accent-color {
+    color: var(--accent-color);
+}
+/*header*/
+.logo {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color:var(--logo-color)
+}
+.menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color:var(--text-header-color);
 }
