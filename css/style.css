@@ -1,24 +1,24 @@
 :root {
+    --main-title-color: #212121;
     --title-color: #FFFFFF;
-    --second-title-color: #212121;
-    --third-title-color: #212121;
-    --text-header-color: #212121;
-    --text-footer-color: #FFFFFF;
     --text-color: #757575;
     --accent-color: #2196F3;
-    --logo-color: #000000;
-    --light-button-color: #FFFFFF;
-    --dark-button-color: #212121;
+    --logo-color-header: #000000;
+    --logo-color-footer: #FFFFFF;
+    --text-button-first-color: #FFFFFF;
+    --text-button-second-color: #212121;
     --main-button-color-background: #2196F3;
-    --secondary-button-color-background: #2196F3;
+    --secondary-button-color-background: #F5F4FA;;
     --main-background-color: #E5E5E5;
     --second-background-color: #2F303A;
     --third-background-color: #F5F4FA;
+    --primary-background-color: #FFFFFF;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    background: var(--main-background-color) ;
+    color: var(--main-title-color);
+    background: var(--main-background-color);
 }
 
 .list {
@@ -27,28 +27,46 @@ body {
 
 .link {
     text-decoration: none;
+    color: inherit;
 }
 
-/*accent-color*/
+.link:hover, .link:focus {
+    color: var(--accent-color);
+}
+
+.btn:active {
+    color: var(--text-button-first-color);
+    background-color: var(--accent-color);
+}
+
+.btn {
+    cursor: pointer;
+}
+
 .accent-color {
     color: var(--accent-color);
 }
 
-/*logo*/
-.header-logo, .footer-logo {
-    font-weight: bold;
+/*--------------header------------------*/
+
+.header {
+    background-color: var(--primary-background-color);
+}
+
+.header-logo {
+    font-family: Raleway;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color:var(--logo-color)
+    color:var(--logo-color-header)
 }
 
-.menu-link {
+.header-menu-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color:var(--text-header-color);
 }
 
 .header-mail, .header-tel {
@@ -59,4 +77,142 @@ body {
     color: var(--text-color);
 }
 
+/*-----------------main-page----------------------*/
+
+/*hero*/
+
+.hero {
+    background-color: var(--second-background-color);
+}
+
+.hero-title {
+    color: var(--title-color);
+}
+
+.hero-button {
+    font-family: inherit;
+    /*color: var(--title-color);
+    background-color: var(--accent-color);*/
+    background-color: var(--secondary-button-color-background);
+}
+
+/*description*/
+
+.description-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.description-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+/*what-are-we-doing*/
+
+.what-are-we-doing-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/*our-team*/
+
+.our-team {
+    background-color: var(--third-background-color);
+}
+
+.our-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.our-team-masters {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.our-team-profession {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+/*------------------portfolio----------------------*/
+
+.button-portfolio {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--secondary-button-color-background);
+}
+
+.project-block {
+    background-color: var(--primary-background-color);
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+}
+
+.project-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color:var(--text-color);
+}
+
+/*------------------footer--------------------*/
+
+.footer {
+    background-color: var(--second-background-color);
+}
+
+.footer-logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-color-footer)
+}
+
+.footer-address {
+    font-style: inherit;
+}
+
+.footer-map {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
+.footer-mail, .footer-tel {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    }
 
