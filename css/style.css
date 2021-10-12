@@ -111,7 +111,6 @@ body {
 }
 
 .hero-button {
-    font-family: inherit;
     color: var(--title-color);
     background-color: var(--accent-color);
 }
@@ -224,7 +223,7 @@ body {
     color: var(--title-color);
 }
 
-.footer-mail, .footer-tel {
+.footer-contacts-links {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
