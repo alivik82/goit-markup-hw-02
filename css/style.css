@@ -8,17 +8,16 @@
     --text-button-first-color: #FFFFFF;
     --text-button-second-color: #212121;
     --main-button-color-background: #2196F3;
-    --secondary-button-color-background: #F5F4FA;;
-    --main-background-color: #E5E5E5;
+    --secondary-button-color-background: #F5F4FA;
+    --primary-background-color: #FFFFFF;
     --second-background-color: #2F303A;
     --third-background-color: #F5F4FA;
-    --primary-background-color: #FFFFFF;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     color: var(--main-title-color);
-    background: var(--main-background-color);
+    background-color: var(--primary-background-color);
 }
 
 .list {
@@ -30,8 +29,20 @@ body {
     color: inherit;
 }
 
-.link:hover, .link:focus {
+.link:hover, 
+.link:focus {
     color: var(--accent-color);
+}
+
+.header-menu-list 
+.current {
+    color: var(--accent-color);
+}
+
+.btn:hover ,
+.btn:focus {
+    color: var(--text-button-first-color);
+    background-color: var(--accent-color);
 }
 
 .btn:active {
@@ -47,11 +58,21 @@ body {
     color: var(--accent-color);
 }
 
-/*--------------header------------------*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-.header {
-    background-color: var(--primary-background-color);
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
+
+/*--------------header------------------*/
 
 .header-logo {
     font-family: Raleway;
@@ -69,7 +90,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.header-mail, .header-tel {
+.header-contacts-links {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -91,9 +112,8 @@ body {
 
 .hero-button {
     font-family: inherit;
-    /*color: var(--title-color);
-    background-color: var(--accent-color);*/
-    background-color: var(--secondary-button-color-background);
+    color: var(--title-color);
+    background-color: var(--accent-color);
 }
 
 /*description*/
@@ -156,17 +176,12 @@ body {
 /*------------------portfolio----------------------*/
 
 .button-portfolio {
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     background-color: var(--secondary-button-color-background);
-}
-
-.project-block {
-    background-color: var(--primary-background-color);
 }
 
 .project-title {
